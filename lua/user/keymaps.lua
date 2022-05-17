@@ -31,7 +31,7 @@ keymap("n", "<leader>q", ":q<cr>", opts)
 --keymap("n", "<leader>qq", ":q!<cr>", opts)
 keymap("n", "<leader>wq", ":wq<cr>", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- split --
 keymap("n", "<leader>v", ":vsplit<CR>", opts)
@@ -54,6 +54,10 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Move text up and down
 --keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 --keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+
+-- Nvimtree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>m", ":Format<cr>", opts)
 
 -- Insert --
 -- Press jk fast to enter
